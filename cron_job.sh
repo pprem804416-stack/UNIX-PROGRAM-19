@@ -11,3 +11,4 @@ CRON_ENTRY="* * * * * $CRON_JOB_PATH"
 
 # 4. Check for duplicates and add to crontab safely
 (crontab -l 2>/dev/null | grep -v "$CRON_JOB_PATH"; echo "$CRON_ENTRY") | crontab -
+
